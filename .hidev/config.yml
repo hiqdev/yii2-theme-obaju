@@ -1,0 +1,6 @@
+package:
+    type:           yii2-extension
+    name:           yii2-theme-obaju
+    title:          Obaju Theme for hiqdev/yii2-thememanager
+    headline:       Yii2 Theme Obaju
+    keywords:       obaju, theme, yii2
