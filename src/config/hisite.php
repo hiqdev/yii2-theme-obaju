@@ -11,7 +11,7 @@
 return [
     'components' => [
         'themeManager' => [
-            'hyde' => [
+            'obaju' => [
                 'class' => \hiqdev\themes\obaju\Theme::class,
             ],
         ],
