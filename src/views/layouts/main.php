@@ -23,7 +23,11 @@ Yii::$app->get('themeManager')->registerAssets();
 <?= $this->render('//layouts/_header') ?>
 <?= $this->render('//layouts/_after_header') ?>
 
-<?= $content ?>
+<div id="all">
+    <div id="content">
+        <?= $content ?>
+    </div>
+</div>
 
 <?= $this->render('//layouts/_footer') ?>
 <?= $this->render('//layouts/_after_footer') ?>
