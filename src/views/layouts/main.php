@@ -2,6 +2,7 @@
 
 use hiqdev\pnotify\Flashes;
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 Yii::$app->get('themeManager')->registerAssets();
 ?>
@@ -24,13 +25,26 @@ Yii::$app->get('themeManager')->registerAssets();
 <?= $this->render('//layouts/_after_header') ?>
 
 <div id="all">
+
     <div id="content">
-        <?= $content ?>
+        <?php if (Yii::$app->themeManager->isHomePage()) : ?>
+            <?= $content ?>
+        <?php else: ?>
+            <div class="container">
+                <div class="col-sm-12">
+                    <?= Breadcrumbs::widget() ?>
+                </div>
+
+                <?= $content ?>
+
+            </div>
+        <?php endif ?>
     </div>
+
+    <?= $this->render('//layouts/_footer') ?>
+    <?= $this->render('//layouts/_after_footer') ?>
 </div>
 
-<?= $this->render('//layouts/_footer') ?>
-<?= $this->render('//layouts/_after_footer') ?>
 
 <?php $this->endBody() ?>
 </body>
