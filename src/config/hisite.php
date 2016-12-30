@@ -24,4 +24,11 @@ return [
             ],
         ],
     ],
+    'container' => [
+        'definitions' => [
+            \hiqdev\thememanager\widgets\LogoLink::class => [
+                'class' => \hiqdev\themes\obaju\widgets\LogoLink::class,
+            ]
+        ]
+    ],
 ];
