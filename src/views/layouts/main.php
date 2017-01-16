@@ -1,6 +1,6 @@
 <?php
 
-use hiqdev\pnotify\Flashes;
+use hiqdev\thememanager\widgets\Flashes;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 
