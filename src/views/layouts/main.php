@@ -32,11 +32,13 @@ Yii::$app->get('themeManager')->registerAssets();
         <?php else: ?>
             <div class="container">
                 <div class="col-sm-12">
-                    <?= Breadcrumbs::widget() ?>
+                    <?= Breadcrumbs::widget([
+                        'homeLink' => ['label' => '<i class="fa fa-home"></i>', 'url' => '/'],
+                        'encodeLabels' => false,
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    ]) ?>
                 </div>
-
                 <?= $content ?>
-
             </div>
         <?php endif ?>
     </div>
