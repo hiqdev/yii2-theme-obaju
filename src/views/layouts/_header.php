@@ -2,6 +2,7 @@
 use hiqdev\thememanager\menus\AbstractMainMenu;
 use hiqdev\thememanager\menus\AbstractNavbarMenu;
 use hiqdev\thememanager\widgets\LogoLink;
+use hiqdev\yii2\cart\widgets\CartTeaser;
 use yii\widgets\Menu;
 
 ?>
@@ -107,10 +108,6 @@ _________________________________________________________ -->
 
         <div class="navbar-buttons">
 
-            <div class="navbar-collapse collapse right" id="basket-overview">
-                <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span
-                        class="hidden-sm">3 items in cart</span></a>
-            </div>
             <?= CartTeaser::widget() ?>
             <!--/.nav-collapse -->
 
