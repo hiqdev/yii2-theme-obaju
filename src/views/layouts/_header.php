@@ -111,6 +111,7 @@ _________________________________________________________ -->
                 <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span
                         class="hidden-sm">3 items in cart</span></a>
             </div>
+            <?= CartTeaser::widget() ?>
             <!--/.nav-collapse -->
 
             <div class="navbar-collapse collapse right" id="search-not-mobile">
