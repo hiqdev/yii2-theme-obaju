@@ -93,7 +93,6 @@ _________________________________________________________ -->
                 </a>
             </div>
         </div>
-        <!--/.navbar-header -->
 
         <div class="navbar-collapse collapse" id="navigation">
 
@@ -104,41 +103,11 @@ _________________________________________________________ -->
             ]) ?>
 
         </div>
-        <!--/.nav-collapse -->
 
         <div class="navbar-buttons">
-
             <?= CartTeaser::widget() ?>
-            <!--/.nav-collapse -->
-
-            <div class="navbar-collapse collapse right" id="search-not-mobile">
-                <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
-                    <span class="sr-only">Toggle search</span>
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
-
         </div>
-
-        <div class="collapse clearfix" id="search">
-
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-
-			<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-
-		    </span>
-                </div>
-            </form>
-
-        </div>
-        <!--/.nav-collapse -->
 
     </div>
-    <!-- /.container -->
 </div>
-<!-- /#navbar -->
 
-<!-- *** NAVBAR END *** -->
