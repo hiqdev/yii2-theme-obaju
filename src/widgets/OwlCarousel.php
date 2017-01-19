@@ -16,17 +16,15 @@ class OwlCarousel extends Widget
      */
     public $items = [];
 
+    public $formatter;
+
     /**
      * Container element (div, ul etc.)
      * @var string
      */
     public $containerTag = 'div';
 
-    /**
-     * Call the plugin function and your carousel is ready.
-     * @var string
-     */
-    public $pluginInit = '$(".owl-carousel").owlCarousel();';
+    public $wrapperTag = 'div';
 
     /**
      * Only the class owl-carousel is mandatory to apply proper styles
@@ -36,6 +34,13 @@ class OwlCarousel extends Widget
     protected $defaultContainerOptions = ['class' => 'owl-carousel owl-theme'];
 
     public $containerOptions = [];
+
+    public function init()
+    {
+        if (is_callable($this->formatter)) {
+            $this->items = array_map($this->formatter, $this->items, array_keys($this->items));
+        }
+    }
 
     public function run()
     {
@@ -49,9 +54,18 @@ class OwlCarousel extends Widget
         return $out;
     }
 
-    public function initCarouselJs()
+    /**
+     * @return string
+     */
+    public function getPluginInit()
+    {
+        return '$(".owl-carousel").owlCarousel();';
+    }
+
+    protected function initCarouselJs()
     {
         OwlCarouselAsset::register($this->view);
-        $this->view->registerJs(new JsExpression($this->pluginInit), View::POS_READY);
+        $pi = new JsExpression($this->getPluginInit());
+        $this->view->registerJs($pi, View::POS_READY);
     }
 }
