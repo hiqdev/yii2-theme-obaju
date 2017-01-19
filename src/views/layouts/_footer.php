@@ -1,5 +1,4 @@
-<!-- *** FOOTER ***
- _________________________________________________________ -->
+<!-- *** FOOTER *** -->
 <div id="footer" data-animate="fadeInUp">
     <div class="container">
         <div class="row">
@@ -31,7 +30,6 @@
                 <hr class="hidden-md hidden-lg hidden-sm">
 
             </div>
-            <!-- /.col-md-3 -->
 
             <div class="col-md-3 col-sm-6">
 
@@ -63,7 +61,6 @@
                 <hr class="hidden-md hidden-lg">
 
             </div>
-            <!-- /.col-md-3 -->
 
             <div class="col-md-3 col-sm-6">
 
@@ -83,7 +80,6 @@
                 <hr class="hidden-md hidden-lg">
 
             </div>
-            <!-- /.col-md-3 -->
 
 
             <div class="col-md-3 col-sm-6">
@@ -105,7 +101,6 @@
 			</span>
 
                     </div>
-                    <!-- /input-group -->
                 </form>
 
                 <hr>
@@ -123,15 +118,11 @@
 
 
             </div>
-            <!-- /.col-md-3 -->
 
         </div>
-        <!-- /.row -->
 
     </div>
-    <!-- /.container -->
 </div>
-<!-- /#footer -->
 
 <!-- *** FOOTER END *** -->
 
