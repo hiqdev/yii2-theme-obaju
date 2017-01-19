@@ -45,7 +45,7 @@ class OwlCarousel extends Widget
     public function run()
     {
         $this->initCarouselJs();
-        $out = Html::beginTag($this->containerTag, array_merge($this->containerOptions, $this->defaultContainerOptions));
+        $out = Html::beginTag($this->containerTag, array_merge($this->defaultContainerOptions, $this->containerOptions));
         foreach ($this->items as $item) {
             $out .= $item;
         }
