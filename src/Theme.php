@@ -8,7 +8,7 @@ class Theme extends \hiqdev\thememanager\Theme
 
     public $description = 'Description';
 
-    public $screenshot = 'http://obaju.ondrejsvestka.cz/img/main-slider1.jpg';
+    public $screenshot = '@hiqdev/themes/obaju/assets/obaju.jpg';
 
     public $assets = [
         Asset::class,
