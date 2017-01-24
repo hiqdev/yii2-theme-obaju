@@ -1,3 +1,7 @@
+<?php
+use hiqdev\thememanager\widgets\SocialLinks;
+
+?>
 <!-- *** FOOTER *** -->
 <div id="footer" data-animate="fadeInUp">
     <div class="container">
@@ -108,14 +112,14 @@
                 <h4>Stay in touch</h4>
 
                 <p class="social">
-                    <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="instagram external" data-animate-hover="shake"><i
-                            class="fa fa-instagram"></i></a>
-                    <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                    <?= SocialLinks::widget([
+                        'tag' => 'span',
+                        'linkOptions' => [
+                            'class' => 'external',
+                            'data-animate-hover' => 'shake',
+                        ],
+                    ]) ?>
                 </p>
-
 
             </div>
 
