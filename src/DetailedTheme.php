@@ -8,5 +8,5 @@ class DetailedTheme extends \hiqdev\thememanager\DetailedTheme
     /**
      * @var array
      */
-    public $type = ['commerce'];
+    public $type = 'commerce,site';
 }
